@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Russo+One&display=swap');
+
+*, *::before, *::after {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+}
+
+body{ 
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.container {
+    position: relative;
+    margin: 25vh;
+    border: 0.1rem solid #e06f1f;
+    border-radius: 5px;
+}
+
+.container h1 {
+    margin: 0;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem ;
+    background-color: #e06f1f;
+    color: #ffffff;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #166d9d;
+ }
+
+.container .dataWorkers {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: #fcf8ef;
+    color: #166d9d;
+}
+
+.container .workersTable {
+    padding: 0 1.5rem 1rem 1.5rem;
+    border-bottom: 1rem solid #fcf8ef;
+    border-radius: 0 0 5px 5px;
+    background-color: #fcf8ef;
+}
+
+.container .workersList {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: #9d5716;
+}
+
+.input {
+    max-width: 10vw;
+    padding: .4rem;
+    border: 1px solid #166d9d;
+    border-radius: .2rem;
+    margin-right: .5rem;
+    color: #166d9d;
+    &:focus {
+        border-color: #166d9d;
+        outline: none;
+        color: #166d9d;
+    };
+}
+
+
+.btn {
+    max-width: 5vw;
+    overflow: hidden;
+    outline: none;
+    padding: .4rem;
+    border: 1px solid #fbe1d0;
+    border-radius: .2rem;
+    background-color: #fbe1d0;
+    color: #d4691d;  
+    cursor: pointer; 
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+
+/*transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+      opacity: 0; transform: translate(100%,0)}
+      opacity: 1; transform: translate(0,0);}*/
+.thead {
+    width: 25vw;
+    text-align: start;
+    padding: .5rem 0 .5rem 0;
+    color: #6c3c0f;
+    font-weight: 600;
+}
+
+.border {
+    display: flex;
+    width: 15vw;
+    /*width: 210px;*/
+    border-bottom: 1px solid #d7c1ad;
+    margin-top: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="module" src="js/absoluteMain.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="card-account-details-outline.png" type="image/x-icon">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <h1>Сотрудники</h1>
+            <form action="" id="add-worker" class="dataWorkers">
+                <input type="text" placeholder="Фамилия" id="input-surname" class="input">
+                <input type="text" placeholder="Имя" id="input-name" class="input">
+                <input type="text" placeholder="Отчество" id="input-lastname" class="input">
+                <input type="number" placeholder="Начало работы" id="input-workstart" class="input">
+                <input type="date" id="input-birthdate" class="input">
+                <input type="text" placeholder="Должность" id="input-post" class="input">
+                <button class="btn" data-hover="click me">Добавить</button>
+            </form>
+            <table class="workersTable">
+                <thead>
+                    <th data-column = "fio" class="thead">ФИО
+                        <div class="border"></div>
+                    </th>
+                    <th data-column = "birthDate" class="thead">Дата рождения
+                        <div class="border"></div>
+                    </th>
+                    <th data-column = "workStart" class="thead">Время работы
+                        <div class="border"></div>
+                    </th>
+                    <th data-column = "post" class="thead">Должность
+                        <div class="border"></div>
+                    </th>
+                </thead>
+                <tbody id="workers-list" class="workersList">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
